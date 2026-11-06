@@ -1,0 +1,16 @@
+# 의존성 / 로그
+node_modules/
+npm-debug.log*
+*.log
+
+# 환경 변수 / 비밀 정보
+.env
+.env.*
+
+# OS / 에디터
+.DS_Store
+.vscode/
+.idea/
+
+# 사용하지 않는 빈 파일
+/profile site

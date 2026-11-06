@@ -1,0 +1,10 @@
+{
+  "name": "profile-site",
+  "version": "1.0.0",
+  "description": "간단한 개인 프로필 웹사이트",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  }
+}
