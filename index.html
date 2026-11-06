@@ -3,47 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="위기관리 PR과 헬스 커뮤니케이션을 연구하는 학생 명하람의 프로필">
   <title>명하람 | 프로필</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="card">
-    <header class="profile">
-      <!-- 프로필 사진: images 폴더에 본인 사진을 넣고 src를 바꾸세요 -->
-      <img class="avatar" src="images/profile.svg" alt="명하람 프로필 사진">
+  <!-- 페이지에서 반복해 쓰는 귀여운 아이콘 모음 -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-shield" viewBox="0 0 48 48">
+      <path d="M24 5l16 6.5V22c0 10.5-7 18-16 21-9-3-16-10.5-16-21V11.5z" fill="#8fa8ff"/>
+      <path d="M16.5 24l5.5 5.5 10-11" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 48 48">
+      <path d="M24 42S8 32.5 8 20.5A8.5 8.5 0 0 1 24 16a8.5 8.5 0 0 1 16 4.5C40 32.5 24 42 24 42z" fill="#ff8fab"/>
+      <rect x="21.5" y="18" width="5" height="15" rx="2.5" fill="#fff"/>
+      <rect x="16.5" y="23" width="15" height="5" rx="2.5" fill="#fff"/>
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 48 48">
+      <path d="M11 9h26a5 5 0 0 1 5 5v15a5 5 0 0 1-5 5H23l-9 7v-7h-3a5 5 0 0 1-5-5V14a5 5 0 0 1 5-5z" fill="#ffd166"/>
+      <circle cx="16" cy="21.5" r="2.6" fill="#fff"/>
+      <circle cx="24" cy="21.5" r="2.6" fill="#fff"/>
+      <circle cx="32" cy="21.5" r="2.6" fill="#fff"/>
+    </symbol>
+    <symbol id="i-mega" viewBox="0 0 48 48">
+      <path d="M9 19h6l17-9v28l-17-9H9a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4z" fill="#7cc6ff"/>
+      <rect x="11" y="28" width="7" height="11" rx="3.5" fill="#56a8f0"/>
+      <path d="M37.5 17.5c2 2 3 4.2 3 6.5s-1 4.5-3 6.5" fill="none" stroke="#ffb84d" stroke-width="3.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 48 48">
+      <path d="M24 4l4.5 15.5L44 24l-15.5 4.5L24 44l-4.5-15.5L4 24l15.5-4.5z" fill="#ffd166"/>
+    </symbol>
+  </svg>
+
+  <!-- 배경 장식 -->
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+
+  <main class="page">
+    <!-- 소개 카드 -->
+    <header class="hero card">
+      <div class="avatar-wrap">
+        <img class="avatar" src="images/profile.svg" alt="명하람 프로필 일러스트" width="168" height="168">
+        <svg class="float f1" aria-hidden="true"><use href="#i-heart"/></svg>
+        <svg class="float f2" aria-hidden="true"><use href="#i-shield"/></svg>
+        <svg class="float f3" aria-hidden="true"><use href="#i-chat"/></svg>
+        <svg class="float f4" aria-hidden="true"><use href="#i-spark"/></svg>
+      </div>
+
+      <p class="hello">안녕하세요, 저는</p>
       <h1 class="name">명하람</h1>
       <p class="role">위기관리 PR · 헬스 커뮤니케이션 연구 학생</p>
     </header>
 
-    <section class="section">
-      <h2>자기소개</h2>
+    <!-- 자기소개 -->
+    <section class="card about">
+      <h2 class="section-title"><span class="dot"></span>자기소개</h2>
       <p>
-        안녕하세요! 위기관리 PR과 헬스 커뮤니케이션을 연구하는 학생 명하람입니다.
-        위기 상황에서 조직이 공중과 어떻게 소통해야 신뢰를 지킬 수 있는지,
-        그리고 건강 정보가 사람들에게 정확하고 효과적으로 전달되려면 무엇이 필요한지에 관심을 가지고 공부하고 있습니다.
+        위기관리 PR과 헬스 커뮤니케이션을 연구하고 있습니다.
+        위기 상황에서 조직이 공중과 어떻게 소통해야 <strong>신뢰를 지킬 수 있는지</strong>,
+        그리고 건강 정보가 사람들에게 <strong>정확하고 효과적으로</strong> 전달되려면
+        무엇이 필요한지에 관심을 가지고 공부하고 있습니다.
       </p>
     </section>
 
-    <section class="section">
-      <h2>관심 분야</h2>
-      <ul class="tags">
-        <li>위기관리 PR</li>
-        <li>헬스 커뮤니케이션</li>
-        <li>위기 커뮤니케이션</li>
-        <li>리스크 커뮤니케이션</li>
-        <li>건강 캠페인</li>
+    <!-- 관심 분야 -->
+    <section class="card interests">
+      <h2 class="section-title"><span class="dot"></span>관심 분야</h2>
+      <ul class="interest-grid">
+        <li class="interest blue">
+          <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+          <h3>위기관리 PR</h3>
+          <p>위기 속에서도 조직의 신뢰를 지키는 소통 전략</p>
+        </li>
+        <li class="interest pink">
+          <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+          <h3>헬스 커뮤니케이션</h3>
+          <p>정확한 건강 정보를 쉽고 효과적으로 전달하는 방법</p>
+        </li>
+        <li class="interest yellow">
+          <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+          <h3>리스크 커뮤니케이션</h3>
+          <p>불확실한 위험을 공중과 함께 이해하고 대응하기</p>
+        </li>
+        <li class="interest sky">
+          <svg class="icon" aria-hidden="true"><use href="#i-mega"/></svg>
+          <h3>건강 캠페인</h3>
+          <p>사람들의 건강한 행동을 이끄는 메시지 설계</p>
+        </li>
       </ul>
     </section>
 
-    <section class="section contact">
-      <h2>연락처</h2>
-      <a class="email-btn" href="mailto:hello@example.com">
-        <span aria-hidden="true">✉</span> hello@example.com
-      </a>
+    <!-- 연락처 -->
+    <section class="card contact">
+      <svg class="envelope" viewBox="0 0 120 96" aria-hidden="true">
+        <rect x="6" y="14" width="108" height="76" rx="14" fill="#ffffff"/>
+        <path d="M10 22l50 36 50-36" fill="none" stroke="#c9d6ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <ellipse cx="46" cy="70" rx="3.5" ry="4.2" fill="#2b2433"/>
+        <ellipse cx="74" cy="70" rx="3.5" ry="4.2" fill="#2b2433"/>
+        <ellipse cx="38" cy="78" rx="5.5" ry="3.5" fill="#ffadc0"/>
+        <ellipse cx="82" cy="78" rx="5.5" ry="3.5" fill="#ffadc0"/>
+        <path d="M55 77q5 5 10 0" fill="none" stroke="#2b2433" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M104 4l2.5 7.5L114 14l-7.5 2.5L104 24l-2.5-7.5L94 14l7.5-2.5z" fill="#ffd166"/>
+      </svg>
+      <div class="contact-text">
+        <h2 class="section-title"><span class="dot"></span>연락처</h2>
+        <p>연구 협업이나 궁금한 점이 있다면 편하게 연락 주세요!</p>
+        <a class="email-btn" href="mailto:hiram923@yonsei.ac.kr">hiram923@yonsei.ac.kr</a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">© 2026 명하람</footer>
 </body>
 </html>
-

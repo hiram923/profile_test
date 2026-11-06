@@ -1,11 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#c7d2fe"/>
-      <stop offset="1" stop-color="#a5b4fc"/>
+      <stop offset="0" stop-color="#dfe9ff"/>
+      <stop offset="1" stop-color="#c9d8ff"/>
     </linearGradient>
   </defs>
   <rect width="200" height="200" fill="url(#bg)"/>
-  <circle cx="100" cy="80" r="36" fill="#eef2ff"/>
-  <path d="M30 200c0-42 31-70 70-70s70 28 70 70z" fill="#eef2ff"/>
+  <circle cx="160" cy="44" r="18" fill="#ffffff" opacity=".55"/>
+  <circle cx="36" cy="150" r="12" fill="#ffffff" opacity=".5"/>
+
+  <!-- 몸 -->
+  <path d="M38 200c0-36 28-56 62-56s62 20 62 56z" fill="#7c9cff"/>
+  <path d="M84 146l16 16 16-16" fill="#ffffff"/>
+  <rect x="91" y="128" width="18" height="20" rx="8" fill="#ffd9c7"/>
+
+  <!-- 머리 -->
+  <ellipse cx="100" cy="94" rx="54" ry="56" fill="#3d3047"/>
+  <ellipse cx="100" cy="102" rx="41" ry="42" fill="#ffe4d6"/>
+  <path d="M57 96c0-34 24-52 47-52 26 0 43 20 41 50-12-14-30-21-48-19-15 2-28 9-40 21z" fill="#3d3047"/>
+
+  <!-- 얼굴 -->
+  <ellipse cx="84" cy="106" rx="4.5" ry="5.5" fill="#2b2433"/>
+  <ellipse cx="116" cy="106" rx="4.5" ry="5.5" fill="#2b2433"/>
+  <circle cx="85.5" cy="104" r="1.6" fill="#fff"/>
+  <circle cx="117.5" cy="104" r="1.6" fill="#fff"/>
+  <ellipse cx="73" cy="119" rx="8" ry="5" fill="#ffadc0" opacity=".75"/>
+  <ellipse cx="127" cy="119" rx="8" ry="5" fill="#ffadc0" opacity=".75"/>
+  <path d="M93 120q7 7 14 0" fill="none" stroke="#2b2433" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- 반짝이 -->
+  <path d="M158 92l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" fill="#ffd166"/>
+  <path d="M40 60l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" fill="#ffd166"/>
 </svg>
