@@ -92,6 +92,9 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  background: #dfe9ff;
   border: 6px solid #fff;
   box-shadow: 0 12px 30px rgba(91, 124, 250, 0.25);
   display: block;
